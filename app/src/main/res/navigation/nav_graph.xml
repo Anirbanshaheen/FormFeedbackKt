@@ -23,8 +23,12 @@
         android:label="fragment_add_student"
         tools:layout="@layout/fragment_add_student" >
         <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
             android:name="student_id"
-            app:argType="Integer" />
+            android:defaultValue="-1"
+            app:argType="integer" />
         <action
             android:id="@+id/action_addStudentFragment_to_studentListFragment"
             app:destination="@id/studentListFragment" />
@@ -36,7 +40,7 @@
         tools:layout="@layout/fragment_student_details" >
         <argument
             android:name="student_id"
-            app:argType="Integer" />
+            app:argType="integer" />
         <action
             android:id="@+id/action_studentDetailsFragment_to_addStudentFragment"
             app:destination="@id/addStudentFragment" />

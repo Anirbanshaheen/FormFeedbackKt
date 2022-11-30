@@ -34,7 +34,7 @@ class StudentListFragment : Fragment() {
 
         val adapter = StudentListAdapter {
             val action =
-                StudentListFragmentDirections.actionStudentListFragmentToAddStudentFragment(it.id)
+                StudentListFragmentDirections.actionStudentListFragmentToStudentDetailsFragment(it.id)
             this.findNavController().navigate(action)
         }
         binding.recyclerView.layoutManager = LinearLayoutManager(this.context)

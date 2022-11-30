@@ -8,12 +8,12 @@ plugins {
 
 android {
     namespace 'com.example.formfeedbackkt'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.example.formfeedbackkt"
         minSdk 21
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -49,8 +49,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
 
     // Lifecycle libraries
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1"
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.5.1"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.3.1"
 
     // Navigation libraries
     implementation "androidx.navigation:navigation-fragment-ktx:2.5.3"

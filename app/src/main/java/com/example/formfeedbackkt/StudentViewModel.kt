@@ -82,9 +82,9 @@ class StudentViewModel(private val studentDao: StudentDao) : ViewModel() {
 
 class StudentViewModelFactory(private val studentDao: StudentDao) : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        if (modelClass.isAssignableFrom(StudentViewModelFactory::class.java)) {
+        if (modelClass.isAssignableFrom(StudentViewModel::class.java)) {
             @Suppress("UNCHECKED_CAST")
-            return StudentViewModelFactory(studentDao) as T
+            return StudentViewModel(studentDao) as T
         }
         throw IllegalArgumentException("Unknown ViewModel class")
     }
